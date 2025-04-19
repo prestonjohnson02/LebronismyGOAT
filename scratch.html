@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scratch Page</title>
+    <link rel="stylesheet" href="css/scratch.css">
+</head>
+<body>
+    <div class="overlay">
+        <main>
+            <h1>Welcome to My Scratch Page</h1>
+
+            <!-- Anchor Navigation -->
+            <nav>
+                <a href="#gallery">Go to Beach Gallery</a> |
+                <a href="#moments">Top Beach Moments</a> |
+                <a href="#video">Watch Beach Video</a> |
+                <a href="#tableau">California Tableau</a>
+            </nav>
+
+            <h3>This page is all about something I love — Beaches! 🌴</h3>
+
+            <!-- Image Gallery -->
+            <div class="section-block" id="gallery">
+                <h2>Beach Gallery</h2>
+                <div class="image-gallery">
+                    <figure>
+                        <img src="assets/img/Beach2.jpg" alt="Beach photo 2" width="300">
+                        <figcaption>Santa Monica Beach</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/img/Beach1.jpg" alt="Beach photo 1" width="300">
+                        <figcaption>Sunset over the water at Santa Monica Beach</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/img/LagunaBeach.jpg" alt="Laguna Beach" width="300">
+                        <figcaption>Laguna Beach, which is my personal favorite beach.</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <!-- Nested List -->
+            <div class="section-block" id="moments">
+                <h2>My Favorite Activities at the Beach</h2>
+                <ol>
+                    <li><strong>In the Water</strong>
+                        <ul>
+                            <li>Surfing</li>
+                            <li>Boogie Boarding</li>
+                            <li>Skim Boarding</li>
+                            <li>Body Surfing</li>
+                        </ul>
+                    </li>
+                    <li><strong>In the Sand</strong>
+                        <ul>
+                            <li>Spikeball on the Sand</li>
+                            <li>Beach Volleyball</li>
+                            <li>Sand Castles</li>
+                            <li>Sun Tanning</li>
+                            <li>Reading a Book on the Beach</li>
+                        </ul>
+                    </li>
+                    <li><strong>Around the Beach</strong>
+                        <ul>
+                            <li>Riding Bikes on the Boardwalk</li>
+                            <li>Fishing on the Pier</li>
+                            <li>Trying Restaurants on the Pier</li>
+                            <li>Looking in Tidepools for Seashells and Fish</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+
+            <!-- YouTube Video Embed -->
+            <div class="section-block" id="video">
+                <h2>Relaxing Beach Vibes Video</h2>
+                <div class="video-container">
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/mpuiiire2H4"
+                        title="2024 Huntington Beach Surfing Competition"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Tableau Visualization -->
+            <div class="section-block" id="tableau">
+                <h2>California Demographic Disparities Visualization</h2>
+                <div class='tableauPlaceholder' id='viz1745093477710' style='position: relative'>
+                    <noscript>
+                        <a href='#'>
+                            <img alt='Tableau Visualization' src='https://public.tableau.com/static/images/In/InteractiveArrestsinCalifornia/DemographicDisparities/1_rss.png' style='border: none' />
+                        </a>
+                    </noscript>
+                    <object class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='InteractiveArrestsinCalifornia/DemographicDisparities' />
+                        <param name='tabs' value='yes' />
+                        <param name='toolbar' value='no' />
+                        <param name='static_image' value='https://public.tableau.com/static/images/In/InteractiveArrestsinCalifornia/DemographicDisparities/1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en-US' />
+                    </object>
+                </div>
+                <script type='text/javascript'>
+                    var divElement = document.getElementById('viz1745093477710');
+                    var vizElement = divElement.getElementsByTagName('object')[0];
+                    if (divElement.offsetWidth > 800) {
+                        vizElement.style.width = '100%';
+                        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                    } else if (divElement.offsetWidth > 500) {
+                        vizElement.style.width = '100%';
+                        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                    } else {
+                        vizElement.style.width = '100%';
+                        vizElement.style.height = '1323px';
+                    }
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                </script>
+            </div>
+
+            <!-- Resume Link -->
+            <div class="footer-nav">
+                <a href="index.html">Back to My Professional Website</a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
+

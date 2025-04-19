@@ -1,0 +1,120 @@
+/* Background + General Text Styling */
+body {
+    background-image: url('../beachsunset.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    min-height: 100vh;
+}
+
+/* Main Content Overlay */
+.overlay {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation */
+nav {
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #00796b;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #004d40;
+    text-decoration: underline;
+}
+
+/* Image Gallery */
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    margin-top: 8px;
+    font-style: italic;
+    color: #555;
+}
+
+/* List Styling */
+ol {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+
+ul {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+/* Video and Tableau Embed */
+.video-container,
+.tableau-container {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+    flex-wrap: wrap;
+}
+
+iframe {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    iframe {
+        width: 90%;
+        height: auto;
+    }
+
+    .overlay {
+        padding: 20px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
